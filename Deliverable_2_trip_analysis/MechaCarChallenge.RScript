@@ -1,0 +1,54 @@
+> View(sus_coil)
+> total_summary <- summary(sus_coil)
+> total_summary
+VehicleID         Manufacturing_Lot 
+Length:150         Length:150        
+Class :character   Class :character  
+Mode  :character   Mode  :character  
+
+
+
+PSI      
+Min.   :1452  
+1st Qu.:1498  
+Median :1500  
+Mean   :1499  
+3rd Qu.:1501  
+Max.   :1542  
+> library(pastecs)
+Error in library(pastecs) : there is no package called ‘pastecs’
+> stat.desc(sus_coil)
+Error in stat.desc(sus_coil) : could not find function "stat.desc"
+> library(dplyr)
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+  
+  filter, lag
+
+The following objects are masked from ‘package:base’:
+  
+  intersect, setdiff, setequal, union
+
+> total_summary <- sus_coil %>% summarize(Mean = mean(PSI))
+> View(total_summary)
+> total_summary <- sus_coil %>% summarize(Mean = mean(PSI), Median=median(PSI))
+> View(total_summary)
+> total_summary <- sus_coil %>% summarize(Mean = mean(PSI), Median=median(PSI),Variance=variance(PSI), SD=sd(PSI))
+Error in `summarize()`:
+  ! Problem while computing `Variance = variance(PSI)`.
+Caused by error in `variance()`:
+  ! could not find function "variance"
+Run `rlang::last_error()` to see where the error occurred.
+> total_summary <- sus_coil %>% summarize(Mean = mean(PSI), Median=median(PSI),Variance=var(PSI), SD=sd(PSI))
+> View(sus_coil)
+> lot_summary <- sus_coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean = mean(PSI), Median=median(PSI),Variance=variance(PSI), SD=sd(PSI))
+Error in `summarize()`:
+  ! Problem while computing `Variance = variance(PSI)`.
+i The error occurred in group 1: Manufacturing_Lot = "Lot1".
+Caused by error in `variance()`:
+  ! could not find function "variance"
+Run `rlang::last_error()` to see where the error occurred.
+> lot_summary <- sus_coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean = mean(PSI), Median=median(PSI),Variance=var(PSI), SD=sd(PSI))
+> View(lot_summary)
