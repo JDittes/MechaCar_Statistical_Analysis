@@ -2,7 +2,7 @@
 Practice with R
 
 ## Linear Regression to Predict MPG
-When I used MPG as the independent variable, I found that several aspects of the cars' bodies were statistically significant. The **vehicle_length** variable had a pr(>|T|) value of 0.0000000000026 and the **ground_clearance** had a value of 0.000000052. These probablility of error rations were extremely low, rejecting the null hypothesis and proving >99% significance.
+When I used MPG as the independent variable, I found that several aspects of the cars' bodies were statistically significant. The **vehicle_length** variable had a probability (pr(>|T|)) of 0.0000000000026 and the **ground_clearance** had a probability of 0.000000052. These p-values were extremely low so we reject the null hypothesis and state that there is a statistically probabliy relationship between these variables.
 ![MPG and other aspects of body style](https://github.com/JDittes/MechaCar_Statistical_Analysis/blob/main/deliverable_1.png)
 
 ## Summary Statistics on Suspension Coils
