@@ -38,8 +38,16 @@ There are several streams of data I could use to compare the vehicles. IIHS offe
 
 This would be numerical data for my study.
 
-I would first set up a table listing a selected set of electrical vehicles, along with a gas-powered, four-door sedan for comparison. Depending on the amount of time I had, I would probably utilize the simpler IIHS data.
+I would first set up a table listing a selected set of electrical vehicles, along with similar-sized gas-powered, cars for comparison. Depending on the amount of time I had, I would probably utilize the simpler IIHS data.
 
 My null hypothesis in this case would be: "there is no significant difference in safety between electric cars and gas-powered cars." The alternate hypothesis would be "there is a significant difference in safety between electric and gas-powered cars."
 
-I need to find p-values to determine the statistical significance
+Using **subsets** I would group the cars by engine types, then I would find the mean, max, and minimum values of the groups. 
+
+Next I would gauge the variance of the ratings in the data set. If there were large varations in either of the subsets, I would need to go back and add data to the subsets with high variance. For example, if I had six electric cars and had a variation higher than 0.05, I would increase the number of electric cars in the set.
+
+Once I had valid data, I would assess for p-values between the two data sets, searching to see if there were significant difference. If there were no significant difference, I would fail to reject the null, meaning that electric cars were just as safe as electric cars. 
+
+If the p-values were low enough to indicate difference, I would be able to tell which cars were safer, gas or electric.
+
+No matter how the results for the groups worked out, I would probably repeat the test with each of the electric cars, comparing them with the mean values of the gas-powered cars to see if any particular models might have significant safety advantages.
