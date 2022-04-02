@@ -22,6 +22,7 @@ The result was a p-value of 0.1815. This shows that the differences between the 
 ![T-test results](https://github.com/JDittes/MechaCar_Statistical_Analysis/blob/main/d3_ttest.png)
 
 I ran a second set of t-tests on the subsets from lots 1, 2, and 3 using the code ```t.test(subset(sus_coil,Manufacturing_Lot=='Lot3')$PSI, mu = 1500)```. It's interesting, the p value of Lot1 was 1. Clearly there was absolutely no difference between the subset and the standard mean. My Lot2 sample returned a p-value of 0.61, well within standard. Lot3 had a p value of 0.042, slightly below the 0.05 cutoff for p-value significance.
+![T-tests for samples](https://github.com/JDittes/MechaCar_Statistical_Analysis/blob/main/d3__sample_ttests.png)
 
 Had Lot3 been the only sample I studied, I might have rejected the null hypothesis. However, with the accurate measures of lots 1 & 2--along with the p-value of the whole sample, I'm confident this return was an outlier. The sample lies within range of the industry standard.
 
