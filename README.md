@@ -7,7 +7,7 @@ When I used MPG as the independent variable, I found that several aspects of the
 Both **vehicle_length** (6.27) and **ground_clearance** (3.55) have significant slopes. Vehicle length has more to do with miles per gallon than clearance does. These can be found in the "Estimate" column. All other variables have negligible slope.
 
 This linear model predicts the mile per gallon (mpg) of fubure MechaCar cars quite effectively. If designers want to design more fuel-efficient cars, they should look at reducing length and ground clearance.
-[![MPG and other aspects of body style](https://github.com/JDittes/MechaCar_Statistical_Analysis/blob/main/deliverable_1.png)
+![MPG and other aspects of body style](https://github.com/JDittes/MechaCar_Statistical_Analysis/blob/main/deliverable_1.png)
 
 ## Summary Statistics on Suspension Coils
 When I looked at the mean PSI of the full sample of suspension coils, I found the PSI to be similar, with a mean of 1,499 PSI and a standard deviation of 7.89. When I divide the standard deviation by the mean, the coefficient of variation is 0.005. This shows a very low amount of variation among all the measures in the dataset.
